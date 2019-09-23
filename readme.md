@@ -1,4 +1,20 @@
-**Status:** Active (under active development, breaking changes may occur)
+## About 
+Studying deep reinforcement learning while at the Recurse Center in 
+Fall 2019. For reference, see [this blog post](https://reading.supply/@mathemakitten/the-recurse-center-six-weeks-of-learning-SHgqLD).
+
+## TODO
+
+* [ ] Exercise 1.1
+* [ ] Exercise 1.2 
+* [ ] Exercise 1.3 
+* [ ] Exercise 2.1 
+* [ ] Exercise 2.2 
+* [ ] Implement vanilla policy gradient 
+* [ ] Implement PPO (proximal policy optimization)
+* [ ] Finish porting over LunarLander to [ocean-gym](https://github.com/mathemakitten/gym)
+
+***
+
 
 Welcome to Spinning Up in Deep RL! 
 ==================================
