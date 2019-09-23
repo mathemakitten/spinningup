@@ -23,12 +23,15 @@ def gaussian_likelihood(x, mu, log_std):
     Returns:
         Tensor with shape [batch]
     """
-    #######################
-    #                     #
-    #   YOUR CODE HERE    #
-    #                     #
-    #######################
-    return tf.constant(0)
+
+    """ 
+    Basically just an implementation of log-likelihood calculation from here: 
+    https://spinningup.openai.com/en/latest/spinningup/rl_intro.html#stochastic-policies
+    """
+    eps = 1e-8
+    prebatch = -0.5 * (((x - mu)**2 / tf.exp(log_std + eps)**2) + 2 * log_std + np.log(2 * np.pi))
+
+    return tf.reduce_sum(prebatch, axis=1)
 
 
 if __name__ == '__main__':
