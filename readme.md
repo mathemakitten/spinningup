@@ -4,7 +4,7 @@ Fall 2019. For reference, see [this blog post](https://reading.supply/@mathemaki
 
 ## TODO
 
-* [ ] Exercise 1.1
+* [x] Exercise 1.1
 * [ ] Exercise 1.2 
 * [ ] Exercise 1.3 
 * [ ] Exercise 2.1 
