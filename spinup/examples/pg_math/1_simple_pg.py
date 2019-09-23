@@ -104,6 +104,7 @@ def train(env_name='CartPole-v0', hidden_sizes=[32], lr=1e-2,
                                     weights_ph: np.array(batch_weights)
                                  })
         return batch_loss, batch_rets, batch_lens
+    # HN note: here, an epoch = 1 batch
 
     # training loop
     for i in range(epochs):
@@ -115,7 +116,7 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--env_name', '--env', type=str, default='CartPole-v0')
-    parser.add_argument('--render', action='store_true')
+    parser.add_argument('--render', default=True, action='store_true')
     parser.add_argument('--lr', type=float, default=1e-2)
     args = parser.parse_args()
     print('\nUsing simplest formulation of policy gradient.\n')
